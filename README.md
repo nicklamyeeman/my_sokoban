@@ -96,12 +96,23 @@ You can use <kbd>Space</kbd> to restart the level your currently trying to solve
 
 <img src="config/level10.png" alt="level10">
 
-But you can add any map in the ``` map/ ``` folder without modifying anything
-
-### BE CAREFUL
 Use <kbd>ESC</kbd> in any level to back in the menu and in the menu to quit the game.
 
 
+### TUTORIAL : ADD YOUR OWN MAPS
+
+You can add your own maps in the ``` maps ``` folder.
+However, you have to follow these steps in order to integrate it properly into the game : 
+
+- The file of your map must follow the sequence of numbers already present (11 maps are originally present so the next one is the map "12")
+
+- Add the selection line of your level in the ascii file of the menu : ```config/menu ``` and don't forget to leave an empty line at the end of the file
+<img src="config/menuconfig.png" alt="menuconfig">
+
+- Add the validation line of the level in the config file of the player : ``` config/player ```in the following way : "```map_name```:```is_finished```" where ```map_name``` will be the name/number of the map and ```is_finished``` being 0 or 1, 0 for an unfinished map and 1 for finished.
+Adding for example the line: ```12:0``` at the end of the file will add the map 12 which is not considered finished.
+Also leave an empty line at the end of the file
+<img src="config/levelconfig.png" alt="levelconfig">
 
 <!-- ROADMAP -->
 ## Roadmap
