@@ -13,7 +13,7 @@
 #include <curses.h>
 #include "my.h"
 
-void level_done(int k, char *num)
+void level_done(int k)
 {
     char *score = read_file("./config/player");
 	FILE *file = fopen("./config/player", "w");

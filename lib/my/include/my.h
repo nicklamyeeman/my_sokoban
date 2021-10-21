@@ -8,23 +8,11 @@
 #ifndef MY_H_
 #define MY_H_
 
-typedef struct s_doop
-{
-    void (*do_op)(char **);
-} doop_t;
-
-/* SRC_FUNC */
-void do_plus(char **);
-void do_min(char **);
-void do_mul(char **);
-void do_div(char **);
-void do_mod(char **);
-
-int error_handling(int, char **);
-int stop_operation(char **);
-int do_op(char **);
-
 /* LIB_FUNC */
+
+int my_compute_power_rec(int, int);
+int my_compute_square_root(int);
+int my_find_prime_sup(int);
 
 char *read_file(char *);
 char **my_str_to_word_tab(char *, char);
@@ -36,10 +24,7 @@ int my_putstr(char const *);
 int my_strlen(char const *);
 int my_getnbr(char const *);
 void my_sort_int_array(int *, int);
-int my_compute_power_rec(int, int);
-int my_compute_square_root(int);
 int my_is_prime(int);
-int my_find_prime_sup(int);
 char *my_strcpy(char *, char const *);
 char *my_strncpy(char *, char const *, int);
 char *my_revstr(char *);

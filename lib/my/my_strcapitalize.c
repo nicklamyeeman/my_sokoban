@@ -7,7 +7,7 @@
 
 int is_alphanum(char c)
 {
-    if (c >= 'a' && c <= 'z'|| c >= 'A' && c <= 'Z')
+    if ((c >= 'a' && c <= 'z')|| (c >= 'A' && c <= 'Z'))
         return (1);
     else if (c >= '0' && c <= '9')
         return (1);
@@ -44,7 +44,6 @@ char could_lowcase(char *str, int i)
 char *my_strcapitalize(char *str)
 {
     int i = 0;
-    int low = 'a' - 'A';
 
     while (str[i] != '\0') {
         if (str[i] >= 'a' && str[i] <= 'z')

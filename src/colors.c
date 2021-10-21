@@ -20,8 +20,10 @@ void sokolors(void)
     init_pair(2, COLOR_YELLOW, COLOR_BLACK);
     init_pair(3, COLOR_MAGENTA, COLOR_BLACK);
     init_pair(4, COLOR_CYAN, COLOR_BLACK);
+    init_pair(5, COLOR_RED, COLOR_BLACK);
     noecho();
     curs_set(0);
+
 }
 
 void my_map_element(char c)

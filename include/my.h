@@ -13,6 +13,10 @@
 
 /* PROG FUNCS */
 
+void level_done(int);
+int prepare_game(char *);
+int *init_select(int *);
+void charge_menu(char **, int *);
 void my_map_element(char);
 void sokolors(void);
 int is_good(char **, int **);

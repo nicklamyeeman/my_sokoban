@@ -61,7 +61,7 @@ void choose_game(int *sel)
     clear();
     res = prepare_game(num);
     if (res == 1)
-        level_done(k, num);
+        level_done(k);
 }
 
 void charge_menu(char **menu, int *sel)
