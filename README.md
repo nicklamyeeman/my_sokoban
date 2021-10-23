@@ -89,7 +89,7 @@ You can navigate throught the menu with the arrow keys <kbd>↑</kbd> & <kbd>↓
 
 The ascii menu is available at ```config/menu```
 
-![level1](https://github.com/nicklamyeeman/my_cook/blob/main/config/level1.gif)
+![level1](https://github.com/nicklamyeeman/my_sokoban/blob/main/config/level1.gif)
 
 Each original level is harder than the previous one.
 You can use <kbd>Space</kbd> to restart the level your currently trying to solve
