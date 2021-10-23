@@ -46,7 +46,7 @@ The player "P" has to move all the boxes "X" on the "O" locations. Once all the 
 
 ### Built With
 
-* [Ncurses](https://invisible-island.net/ncurses/announce.html)
+* [ncurses](https://invisible-island.net/ncurses/announce.html)
 
 
 
